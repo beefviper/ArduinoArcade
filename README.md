@@ -20,7 +20,7 @@ Arcade contains Hardware and Software. It also contains four main functions:
   init(), draw(), input(), and logic() which it cascades down.
   
 Hardware contains Screen, Joystick, Speaker, and RanNumGen. It calls all the init() functions
-  for all the hardware define with HardwareParams.
+  for all the hardware defined with HardwareParams.
   
 Screen is an U8G2 object. Library: https://github.com/olikraus/u8g2
 
