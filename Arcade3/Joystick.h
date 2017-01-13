@@ -12,11 +12,11 @@ Author:		beefviper
 class Joystick {
 	public:
 		Joystick();
-		Joystick(byte xP, byte yP, byte bP);
+		Joystick(int xP, int yP, int bP);
 		Joystick(JoystickParams &jsp);
 		~Joystick();
 
-		void init(byte xP, byte yP, byte bp);
+		void init(int xP, int yP, int bp);
 
 		int getx();
 		int gety();
@@ -33,9 +33,9 @@ class Joystick {
 		void print();
 
 	private:
-		byte xPin;
-		byte yPin;
-		byte bPin;
+		int xPin;
+		int yPin;
+		int bPin;
 
 		int x;
 		int y;

@@ -32,9 +32,9 @@ class Block : public Variables {
 		Block();
 		~Block() {  }
 
-		static const byte totalBlocks = 35;
-		static const byte columns = 7;
-		static const byte rows = 5;
+		static const int totalBlocks = 35;
+		static const int columns = 7;
+		static const int rows = 5;
 
 		bool enabled[totalBlocks];
 		D2Point position[totalBlocks];
@@ -52,7 +52,7 @@ class Ball : public Variables {
 
 		D2Point position;
 		D2Point velocity;
-		byte radius;
+		int radius;
 
 		void reset();
 		void move();

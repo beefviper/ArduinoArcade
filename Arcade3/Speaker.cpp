@@ -10,7 +10,7 @@ Speaker::Speaker() {
 
 }
 
-Speaker::Speaker(byte sP, SpeakerParams::Type sT) {
+Speaker::Speaker(int sP, SpeakerParams::Type sT) {
 	init(sP, sT);
 }
 
@@ -22,7 +22,7 @@ Speaker::~Speaker() {
 
 }
 
-void Speaker::init(byte sP, SpeakerParams::Type sT) {
+void Speaker::init(int sP, SpeakerParams::Type sT) {
 	sPin = sP;
 	pinMode(sP, OUTPUT);
 	sType = sT;

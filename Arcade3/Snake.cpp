@@ -31,7 +31,7 @@ void Body::grow() {
 }
 
 void Body::move() {
-	for (byte i = length; i >= 0; i--) {
+	for (int i = length; i >= 0; i--) {
 		position[i + 1].x = position[i].x;
 		position[i + 1].y = position[i].y;
 	}
@@ -45,7 +45,7 @@ bool Body::collide() {
 		return true;
 	}
 
-	for (byte i = 1; i <= length; i++) {
+	for (int i = 1; i <= length; i++) {
 		if ((position[0].x == position[i].x) && (position[0].y == position[i].y)) {
 			return true;
 		}
@@ -65,7 +65,7 @@ bool Body::eat(Food &f) {
 
 void Body::draw(U8G2_ST7920_128X64_1_6800 &screen) {
 	if (!gameOver) {
-		for (byte i = length; i >= 0; i--) {
+		for (int i = length; i >= 0; i--) {
 			screen.drawBox(position[i].x, position[i].y, screenScale, screenScale);
 		}
 	}

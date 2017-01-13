@@ -24,11 +24,11 @@ public:
 	Body();
 	~Body();
 
-	byte velocityX;
-	byte velocityY;
-	byte length;
+	int velocityX;
+	int velocityY;
+	int length;
 
-	static const byte maxLength = 100;
+	static const int maxLength = 100;
 
 	D2Point position[maxLength];
 

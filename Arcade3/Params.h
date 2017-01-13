@@ -12,42 +12,42 @@ enum Direction { Up, Down, Left, Right, None };
 
 class D2Point {
 public:
-	byte x;
-	byte y;
+	int x;
+	int y;
 };
 
 class ScreenParams {
 	public:
-		static byte data1Pin;
-		static byte data2Pin;
-		static byte data3Pin;
-		static byte data4Pin;
-		static byte data5Pin;
-		static byte data6Pin;
-		static byte data7Pin;
-		static byte data8Pin;
-		static byte enablePin;
-		static byte commandPin;
-		static byte resetPin;
+		static int data1Pin;
+		static int data2Pin;
+		static int data3Pin;
+		static int data4Pin;
+		static int data5Pin;
+		static int data6Pin;
+		static int data7Pin;
+		static int data8Pin;
+		static int enablePin;
+		static int commandPin;
+		static int resetPin;
 };
 
 class JoystickParams {
 	public:
-		static byte xPin;
-		static byte yPin;
-		static byte bPin;
+		static int xPin;
+		static int yPin;
+		static int bPin;
 };
 
 class SpeakerParams {
 	public:
 		enum Type { Active, Passive };
-		static byte sPin;
+		static int sPin;
 		static Type sType;
 };
 
 class RanNumGenParams {
 	public:
-		static byte fPin;
+		static int fPin;
 };
 
 class HardwareParams {
@@ -71,19 +71,19 @@ class SoftwareParams {
 class Variables {
 public:
 	// Hardware constants
-	static const byte screenScale = 4;
-	static const byte screenWidth = 128;
-	static const byte screenHeight = 64;
-	static const byte screenXMiddle = screenWidth / 2;
-	static const byte screenYMiddle = screenHeight / 2;
-	static const byte screenColumns = screenWidth / screenScale;
-	static const byte screenRows = screenHeight / screenScale;
+	static const int screenScale = 4;
+	static const int screenWidth = 128;
+	static const int screenHeight = 64;
+	static const int screenXMiddle = screenWidth / 2;
+	static const int screenYMiddle = screenHeight / 2;
+	static const int screenColumns = screenWidth / screenScale;
+	static const int screenRows = screenHeight / screenScale;
 
 	// Game variables
 	static const int frameSkip = 1;
 
-	static byte frameLimit;
-	static byte score;
+	static int frameLimit;
+	static int score;
 	static bool buttonState;
 	static bool gameOver;
 	static bool firstGame;

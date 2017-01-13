@@ -10,7 +10,7 @@ Joystick::Joystick() {
 
 }
 
-Joystick::Joystick(byte xP, byte yP, byte bP) {
+Joystick::Joystick(int xP, int yP, int bP) {
 	init(xP, yP, bP);
 }
 
@@ -22,7 +22,7 @@ Joystick::~Joystick() {
 
 }
 
-void Joystick::init(byte xP, byte yP, byte bP) {
+void Joystick::init(int xP, int yP, int bP) {
 	xPin = xP;
 	yPin = yP;
 	bPin = bP;

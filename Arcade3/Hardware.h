@@ -22,11 +22,11 @@ class Hardware {
 		Hardware(HardwareParams &hwp);
 		~Hardware();
 
-		static const byte xAxisPin = 16;
-		static const byte yAxisPin = 19;
-		static const byte buttonPin = 2;
-		static const byte speakerPin = 3;
-		static const byte floatingPin = 14;
+		static const int xAxisPin = 16;
+		static const int yAxisPin = 19;
+		static const int buttonPin = 2;
+		static const int speakerPin = 3;
+		static const int floatingPin = 14;
 		static const SpeakerParams::Type speakerType = SpeakerParams::Passive;
 
 		U8G2_ST7920_128X64_1_6800 screen;

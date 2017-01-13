@@ -13,15 +13,15 @@ Author:		beefviper
 class Speaker {
 	public:
 		Speaker();
-		Speaker(byte sP, SpeakerParams::Type sT);
+		Speaker(int sP, SpeakerParams::Type sT);
 		Speaker(SpeakerParams &spp);
 		~Speaker();
 
-		void init(byte sP, SpeakerParams::Type sT);
+		void init(int sP, SpeakerParams::Type sT);
 
 		void beep(int timeout);
 
 	private:
-		byte sPin;
+		int sPin;
 		SpeakerParams::Type sType;
 };

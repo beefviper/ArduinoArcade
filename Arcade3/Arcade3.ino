@@ -14,27 +14,27 @@ bool HardwareParams::joystickEnable = true;
 bool HardwareParams::speakerEnable  = true;
 bool HardwareParams::rngEnable      = true;
 
-byte ScreenParams::data1Pin   =  8;
-byte ScreenParams::data2Pin   =  9;
-byte ScreenParams::data3Pin   = 10;
-byte ScreenParams::data4Pin   = 12;
-byte ScreenParams::data5Pin   =  4;
-byte ScreenParams::data6Pin   =  5;
-byte ScreenParams::data7Pin   =  6;
-byte ScreenParams::data8Pin   =  7;
-byte ScreenParams::enablePin  = 18;
-byte ScreenParams::commandPin = 17;
-byte ScreenParams::resetPin   = 15;
+int ScreenParams::data1Pin   =  8;
+int ScreenParams::data2Pin   =  9;
+int ScreenParams::data3Pin   = 10;
+int ScreenParams::data4Pin   = 12;
+int ScreenParams::data5Pin   =  4;
+int ScreenParams::data6Pin   =  5;
+int ScreenParams::data7Pin   =  6;
+int ScreenParams::data8Pin   =  7;
+int ScreenParams::enablePin  = 18;
+int ScreenParams::commandPin = 17;
+int ScreenParams::resetPin   = 15;
 
-byte JoystickParams::xPin  = 16;
-byte JoystickParams::yPin  = 19;
-byte JoystickParams::bPin  =  2;
+int JoystickParams::xPin  = 16;
+int JoystickParams::yPin  = 19;
+int JoystickParams::bPin  =  2;
 
 #define SpkrType SpeakerParams::Type 
-byte     SpeakerParams::sPin   = 11;
+int     SpeakerParams::sPin   = 11;
 SpkrType SpeakerParams::sType  = SpeakerParams::Passive;
 
-byte RanNumGenParams::fPin = 14;
+int RanNumGenParams::fPin = 14;
 
 ScreenParams    HardwareParams::Screen    = ScreenParams();
 JoystickParams  HardwareParams::Joystick  = JoystickParams();
@@ -45,8 +45,8 @@ HardwareParams hardwareparams;
 
 bool Variables::gameOver = true;
 bool Variables::firstGame = true;
-byte Variables::score = 0;
-byte Variables::frameLimit = Variables::frameSkip;
+int Variables::score = 0;
+int Variables::frameLimit = Variables::frameSkip;
 
 Arcade arcade(hardwareparams);
 

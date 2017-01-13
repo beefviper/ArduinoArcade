@@ -34,8 +34,8 @@ class Enemy : public Variables {
 		D2Point origin;
 		D2Point end;
 		D2Point slope;
-		byte speedLimit;
-		byte speed;
+		int speedLimit;
+		int speed;
 
 		void reset();
 		void move();
@@ -49,11 +49,11 @@ class Bullet : public Variables {
 		~Bullet() {  }
 
 		D2Point position;
-		byte size;
+		int size;
 		bool exploding;
 		bool growing;
-		byte speedLimit;
-		byte speed;
+		int speedLimit;
+		int speed;
 
 		void reset();
 		void explode();
