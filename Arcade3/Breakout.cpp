@@ -197,6 +197,10 @@ void Breakout::logic(Joystick &joystick, Speaker &speaker) {
 			block.reset();
 			ball.reset();
 			speaker.beep(100);
+			if (!firstGame) {
+				selectGame = 3;
+				currentGame = 3;
+			}
 		}
 	}
 }

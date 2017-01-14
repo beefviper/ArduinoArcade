@@ -154,6 +154,10 @@ void Snake::logic(Joystick &joystick, Speaker &speaker) {
 			score = 0;
 			speaker.beep(100);
 			food.place();
+			if (!firstGame) {
+				selectGame = 3;
+				currentGame = 3;
+			}
 		}
 	}
 }

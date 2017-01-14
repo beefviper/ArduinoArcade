@@ -173,11 +173,13 @@ void Missile::logic(Joystick &joystick, Speaker &speaker) {
 		if (joystick.button()) {
 			gameOver = false;
 			firstGame = false;
-			//body.reset();
 			enemy.reset();
 			score = 0;
 			speaker.beep(100);
-			//food.place();
+			if (!firstGame) {
+				selectGame = 3;
+				currentGame = 3;
+			}
 		}
 	}
 
