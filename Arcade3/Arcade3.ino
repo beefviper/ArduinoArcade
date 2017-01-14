@@ -31,7 +31,7 @@ int JoystickParams::yPin  = 19;
 int JoystickParams::bPin  =  2;
 
 #define SpkrType SpeakerParams::Type 
-int     SpeakerParams::sPin   = 11;
+int      SpeakerParams::sPin   = 11;
 SpkrType SpeakerParams::sType  = SpeakerParams::Passive;
 
 int RanNumGenParams::fPin = 14;
@@ -47,6 +47,8 @@ bool Variables::gameOver = true;
 bool Variables::firstGame = true;
 int Variables::score = 0;
 int Variables::frameLimit = Variables::frameSkip;
+int Variables::selectGame = 0;
+int Variables::currentGame = 3;
 
 Arcade arcade(hardwareparams);
 

@@ -20,52 +20,52 @@ class Food;
 class Snake;
 
 class Body : public Variables {
-public:
-	Body();
-	~Body();
+	public:
+		Body();
+		~Body();
 
-	int velocityX;
-	int velocityY;
-	int length;
+		int velocityX;
+		int velocityY;
+		int length;
 
-	static const int maxLength = 100;
+		static const int maxLength = 100;
 
-	D2Point position[maxLength];
+		D2Point position[maxLength];
 
-	void reset();
-	void grow();
-	void move();
-	bool collide();
-	bool eat(Food &f);
-	void draw(U8G2_ST7920_128X64_1_6800 &screen);
+		void reset();
+		void grow();
+		void move();
+		bool collide();
+		bool eat(Food &f);
+		void draw(U8G2_ST7920_128X64_1_6800 &screen);
 
-	void left() { velocityX = -1; velocityY = 0; };
-	void right() { velocityX = 1; velocityY = 0; };
-	void up() { velocityX = 0; velocityY = -1; };
-	void down() { velocityX = 0; velocityY = 1; };
-	void direction(Direction d);
+		void left() { velocityX = -1; velocityY = 0; };
+		void right() { velocityX = 1; velocityY = 0; };
+		void up() { velocityX = 0; velocityY = -1; };
+		void down() { velocityX = 0; velocityY = 1; };
+		void direction(Direction d);
 
-private:
+	private:
 
 };
 
 class Food : public Variables {
-public:
-	Food();
-	~Food();
+	public:
+		Food();
+		~Food();
 
-	D2Point position;
+		D2Point position;
 
-	void place();
-	void draw(U8G2_ST7920_128X64_1_6800 &screen);
+		void place();
+		void draw(U8G2_ST7920_128X64_1_6800 &screen);
 
-private:
+	private:
 
 };
 
 class sAttract : public Variables {
-public:
-	void draw(U8G2_ST7920_128X64_1_6800 &screen);
+	public:
+		void draw(U8G2_ST7920_128X64_1_6800 &screen);
 };
 
 class Snake : public Variables {

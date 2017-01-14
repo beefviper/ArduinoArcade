@@ -6,9 +6,11 @@ Author:		beefviper
 
 #pragma once
 
+#include "Params.h"
+
 #include "Game.h"
 
-class Software {
+class Software : public Variables {
 	public:
 		Software();
 		~Software();
