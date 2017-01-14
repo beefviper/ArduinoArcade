@@ -6,18 +6,22 @@ Author:		beefviper
 
 #pragma once
 
+#include "Params.h"
+
 #include "Joystick.h"
 #include "Speaker.h"
 
+#include "Menu.h"
 #include "Snake.h"
 #include "Missile.h"
 #include "Breakout.h"
 
-class Game {
+class Game : public Variables {
 	public:
 		Game();
 		~Game();
 
+		Menu menu;
 		Snake snake;
 		Missile missile;
 		Breakout breakout;

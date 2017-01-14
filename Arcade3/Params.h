@@ -84,6 +84,8 @@ public:
 
 	static int frameLimit;
 	static int score;
+	static int selectGame;
+	static int currentGame;
 	static bool buttonState;
 	static bool gameOver;
 	static bool firstGame;

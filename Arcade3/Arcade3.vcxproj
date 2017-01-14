@@ -87,6 +87,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Hardware.h" />
     <ClInclude Include="Joystick.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Missile.h" />
     <ClInclude Include="Params.h" />
     <ClInclude Include="RanNumGen.h" />
@@ -101,6 +102,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Hardware.cpp" />
     <ClCompile Include="Joystick.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Missile.cpp" />
     <ClCompile Include="Snake.cpp" />
     <ClCompile Include="Software.cpp" />
