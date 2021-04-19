@@ -1,4 +1,4 @@
-# Arcade3
+# ArduinoArcade
 Simple Arduino hardware and software framework for games.
 
 The basic layout is:
